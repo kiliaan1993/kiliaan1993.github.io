@@ -1,0 +1,63 @@
+body {
+	background-image:url(https://fortunedotcom.files.wordpress.com/2017/01/beard-closeup-gettyimages-533835729.jpg?w=1100&quality=85);
+	background-attachment:fixed;
+	background-size:100em;
+	background-position:center;
+	font-family:Calibri;
+}
+
+body>div{
+	padding:50px;
+	background: rgba(191,239,255,0.7); /*damit nicht alles transparent erscheint (z.B. opacity:0.7), muss der Hintergrund des Rahmens mit rbg-Farben [rbga(r,b,g,Transparenz) bestimmt werden*/
+    border: 2px solid #6495ed;
+    border-radius: 20px; 
+	margin: 100px;
+	text-align:justify;
+}
+
+body>div:hover{
+	background: rgba(224,255,255,1)
+}
+
+
+img{
+	height:200px;
+	margin:auto;
+}
+
+img:hover{
+	height:500px;	
+}
+
+
+h1 {
+	color:darkblue;
+	text-align:center;
+	font-family:Stencil;
+	font-size:3em;
+}
+
+p {
+	font-size:1.5em;
+}
+
+li {
+	font-size:1.5em;
+}
+
+a {
+	font-weight:bold;
+}
+
+a:link {
+	text-decoration:none;
+	color:darkblue;
+}
+a:visited {
+	text-decoration:none;
+	color:#a900a9;
+}
+a:hover {
+	text-decoration:none;
+	color:red;
+}
