@@ -7,9 +7,11 @@
 
     <title>basemap.at mit leaflet-hash Plugin</title>
 
-    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
-    <script src="../js/leaflet/leaflet.js"></script>
-    <script src="../js/leaflet-hash/leaflet-hash.js"></script>
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <script src="js/leaflet/leaflet.js"></script>
+    <script src="js/leaflet-hash/leaflet-hash.js"></script>
+	<script src="data/AdlerwegEtappeO3.js"></script>
+	
 
     <style>
         body {
@@ -81,7 +83,7 @@
 
         // leaflet-hash aktivieren
         var hash = new L.Hash(map);
-
+	L.geoJSON(window.etappeO3).addTo(map);
     </script>
 
 </body>
