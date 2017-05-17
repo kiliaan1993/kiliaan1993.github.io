@@ -14,6 +14,7 @@
 	<script src="data/AdlerwegEtappeO3.js"></script>
 	<script src="js/leaflet-elevation/leaflet.elevation-0.0.4.min.js"></script>
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
 	
 
     <style>
@@ -86,6 +87,7 @@
 
         // leaflet-hash aktivieren
         var hash = new L.Hash(map);
+		omnivore.gpx('data/AdlerwegEtappeO3.gpx').addTo(map);
 	
 		//Etappe O3 reinziehen
 		//console.log(window.etappeO3);
@@ -100,7 +102,7 @@
 		//Koordinaten der Hütte reinziehen. Mit [] können mehrere Hütten gespeichert werden:
 		var huts = [ 
 		L.marker([47.03899, 12.42752],{
-		title: "Bonn-Matreier-Hütte",
+		title: 'Bonn-Matreier-Hütte',
 		icon: L.icon({
 		iconUrl: 'icons/mosquee.png'
 		})
