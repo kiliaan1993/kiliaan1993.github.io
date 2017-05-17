@@ -83,7 +83,27 @@
 
         // leaflet-hash aktivieren
         var hash = new L.Hash(map);
-	L.geoJSON(window.etappeO3).addTo(map);
+	
+		//Etappe O3 reinziehen
+		L.geoJSON(window.etappeO3).addTo(map);
+		
+		//Koordinaten der Hütte reinziehen. Mit [] können mehrere Hütten gespeichert werden:
+		var huts = [ 
+		L.marker([47.03899, 12.42752],{
+		title: "Bonn-Matreier-Hütte",
+		icon: L.icon({
+		iconUrl: 'icons/mosquee.png'
+		})
+		})//ich hab nicht mehrere Hütten, ansonsten einfach L.marker([...]),L.marker([...]),L.marker([...]),
+		];
+		//mit einem Klick alle Icons anzeigen oder nicht, so viele Einträge wie da drinnen sind, soll er das i um eins erhöhen:
+		var hutsLayer = L.featureGroup();
+		for (var i=0; i<huts.length; i++) {
+		hutsLayer.addLayer(huts[i]);
+		}
+		hutsLayer.addTo(map);
+		
+		
     </script>
 
 </body>
