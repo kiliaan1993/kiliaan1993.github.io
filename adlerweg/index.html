@@ -28,8 +28,11 @@
         }
         #text {
             width: 1024px;
-			background-color: #9FF781;
-        }		
+			background-color: rgba(156,194,34,.2);
+        }
+		p {
+			margin-top: 1.1em;
+			}
     </style>
 </head>
     <div id="text">
@@ -95,21 +98,20 @@
 
         // leaflet-hash aktivieren
         var hash = new L.Hash(map);
-		omnivore.gpx('data/AdlerwegEtappeO3.gpx').addTo(map);
+		var adlerwego3 = omnivore.gpx('data/AdlerwegEtappeO3.gpx').addTo(map);
 	
 		//Etappe O3 reinziehen
-		//console.log(window.etappeO3);
 		var el = L.control.elevation();
 		el.addTo(map);
 		L.geoJSON(window.etappeO3, {
 		onEachFeature: el.addData.bind(el)
-		}
-		).addTo(map);
+		}).addTo(map);
 		
+		adlerwego3.bindPopup("<b>Ausgangspunkt</b><br>Eisseehütte<p><b>Endpunkt</b><br>Bonn-Matreier-Hütte</p><p><b>Höhenmeter bergauf</b><br>600</p><p><b>Höhenmeter bergab</b><br>370</p><p><b>Höchster Punkt</b><br>2750</p><p><b>Schwierigkeitsstufe</b><br>mittelschwierig</p><p><b>Streckenlänge (in km)</b><br>7</p><p><b>Gehzeit (in Stunden)</b><br>3,5</p><p><b>Einkehrmöglichkeiten</b><br>Bonn-Matreier-Hütte</p><p><b>ID in GPS-Track</b><br>O3</p>");
 		
 		//Koordinaten der Hütte reinziehen. Mit [] können mehrere Hütten gespeichert werden:
 		var huts = [ 
-		L.marker([47.03899, 12.42752],{
+		L.marker([47.03920, 12.42748],{
 		title: 'Bonn-Matreier-Hütte',
 		icon: L.icon({
 		iconUrl: 'icons/mosquee.png'
@@ -128,9 +130,11 @@
 			map.addLayer(hutsLayer);
 			} else {
 			map.removeLayer(hutsLayer);
-		}
-		});
+		};
 		
+		});
+	
+
 		
     </script>
 
