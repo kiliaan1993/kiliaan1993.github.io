@@ -116,7 +116,7 @@
 		title: 'Bonn-Matreier-Hütte',
 		icon: L.icon({
 		iconUrl: 'icons/restaurant.png',
-		//iconAnchor: [18,-18.5] //schaffe es nicht, dass die Spitze die Koordinaten trifft
+		iconAnchor: [16,37] //schaffe es nicht, dass die Spitze die Koordinaten trifft
 		})
 		}).addTo(map);//ich hab nicht mehrere Hütten, ansonsten einfach L.marker([...]),L.marker([...]),L.marker([...]),
 		
@@ -124,7 +124,8 @@
 		var startpunkt = L.marker([47.055578, 12.379007],{
 		title: 'Startpunkt',
 		icon: L.icon({
-		iconUrl: 'icons/start-race-2.png'
+		iconUrl: 'icons/start-race-2.png',
+		iconAnchor: [16,37]
 		})
 		}).addTo(map);
 		
@@ -132,13 +133,15 @@
 		title: 'Endpunkt',
 		icon: L.icon({
 		iconUrl: 'icons/finish.png',
+		iconAnchor: [16,37]
 		})
 		}).addTo(map);
 		
 		var restaurant2 = L.marker([47.0556, 12.37888],{
 		title: 'Eisseehütte',
 		icon: L.icon({
-		iconUrl: 'icons/restaurant.png'
+		iconUrl: 'icons/restaurant.png',
+		iconAnchor: [16,37]
 		})
 		}).addTo(map);
 
