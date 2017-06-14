@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<Region>
+<Lod>
+<minLodPixels>160</minLodPixels>
+<maxLodPixels>-1</maxLodPixels>
+</Lod>
+<LatLonAltBox>
+<north>56.4389318915398377</north>
+<south>56.3581266596438439</south>
+<east>-134.0988790886048037</east>
+<west>-135.6605625699999962</west>
+</LatLonAltBox>
+</Region>
+<GroundOverlay>
+<Icon>
+<href>coastal_pyramid_0_tile_16.png</href>
+</Icon>
+<LatLonBox>
+<north>56.4389318915398377</north>
+<south>56.3581266596438439</south>
+<east>-134.0988790886048037</east>
+<west>-135.6605625699999962</west>
+</LatLonBox>
+</GroundOverlay>
+</Document>
+</kml>

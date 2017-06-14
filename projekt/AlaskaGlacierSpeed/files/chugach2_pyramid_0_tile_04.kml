@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<Region>
+<Lod>
+<minLodPixels>512</minLodPixels>
+<maxLodPixels>-1</maxLodPixels>
+</Lod>
+<LatLonAltBox>
+<north>61.3584742597701762</north>
+<south>60.5314343137510491</south>
+<east>-148.3015551994910766</east>
+<west>-150.0193059106637463</west>
+</LatLonAltBox>
+</Region>
+<GroundOverlay>
+<Icon>
+<href>chugach2_pyramid_0_tile_04.png</href>
+</Icon>
+<LatLonBox>
+<north>61.3584742597701762</north>
+<south>60.5314343137510491</south>
+<east>-148.3015551994910766</east>
+<west>-150.0193059106637463</west>
+</LatLonBox>
+</GroundOverlay>
+</Document>
+</kml>

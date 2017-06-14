@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<Region>
+<Lod>
+<minLodPixels>512</minLodPixels>
+<maxLodPixels>-1</maxLodPixels>
+</Lod>
+<LatLonAltBox>
+<north>63.6844117185872918</north>
+<south>62.8575744117796802</south>
+<east>-151.4772062021476700</east>
+<west>-153.2928261930167935</west>
+</LatLonAltBox>
+</Region>
+<GroundOverlay>
+<Icon>
+<href>alaskarng2_pyramid_0_tile_0.png</href>
+</Icon>
+<LatLonBox>
+<north>63.6844117185872918</north>
+<south>62.8575744117796802</south>
+<east>-151.4772062021476700</east>
+<west>-153.2928261930167935</west>
+</LatLonBox>
+</GroundOverlay>
+</Document>
+</kml>
