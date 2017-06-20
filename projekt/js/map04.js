@@ -38,7 +38,7 @@ window.onload = function () {
 		center: [25.512089, -78.818544],
 		zoom: 8,
 		maxZoom: 8
-	}, );
+	});
 
 	var miniMap = new L.Control.GlobeMiniMap({
 		topojsonSrc : 'js/world.json'
