@@ -76,8 +76,8 @@ p {
 }
 
 #map {
-  height: 600px;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  /*margin: auto;
+  margin-bottom: 20px;*/
 }
