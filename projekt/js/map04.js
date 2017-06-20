@@ -35,8 +35,8 @@ window.onload = function () {
 
 	var map = L.map('map', {
 		layers: [layers.CartoDB_PositronOnlyLabels, magnifyingGlass, /*layers.NASAGIBS_ViirsEarthAtNight2012*/ layers.NASAGIBS_ViirsEarthAtNight2012],
-		center: [25.512089, -78.818544],
-		zoom: 8,
+		center: [28.504270, 31.134227],
+		zoom: 7,
 		maxZoom: 8
 	});
 
